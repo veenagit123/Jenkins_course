@@ -1,0 +1,12 @@
+job('Maven complie') {
+ scm {
+      git('https://github.com/veenagit123/JenkinsFile_samples.git')
+      }
+      
+ wrappers{
+   mvn('mvnw')
+   }
+   
+ steps{
+   shell("mvn clean")
+   }
