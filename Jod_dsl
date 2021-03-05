@@ -3,11 +3,8 @@ job('Maven complie') {
       git('https://github.com/veenagit123/JenkinsFile_samples.git')
       }
       
- wrappers{
-   mvn('mvnw')
-   }
-   
- steps{
+    
+withMaven{
    shell("mvn clean")
    }
 }
