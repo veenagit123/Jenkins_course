@@ -1,12 +1,12 @@
 job('Maven complie') {
  scm {
-      git('https://github.com/veenagit123/JenkinsFile_samples.git')
+      git('https://github.com/veenagit123/Java_poject_sample.git')
       }
       
     
 steps{
    maven{
-            goals('clean')
+            goals('clean install')
             goals('verify')
             mavenOpts('-Xms256m')
             mavenOpts('-Xmx512m')
