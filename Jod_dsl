@@ -10,3 +10,4 @@ job('Maven complie') {
  steps{
    shell("mvn clean")
    }
+}
